@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": 3,
+      "name": "Boné aba reta",
+      "price": 29.9
+    },
+    {
+      "name": "saia",
+      "price": "200",
+      "id": 4
+    },
+    {
+      "name": "bone",
+      "price": "32",
+      "id": 5
+    },
+    {
+      "name": "carro",
+      "price": "100000",
+      "id": 6
+    }
+  ]
+}
