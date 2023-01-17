@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 export const useFetch = (url) => {
     const [data, setData] = useState(null)
 
-
     // refatorando post
     const [config, setConfig] = useState(null)
     const [method, setMethod] = useState(null)
@@ -18,7 +17,7 @@ export const useFetch = (url) => {
   
 
     //deletando
-    const [deleteButton, setDeleteButton] = useState(false)
+
     const [itemId, setItemId] = useState(null)
 
     const httpConfig = (data, method) => {
@@ -45,6 +44,7 @@ export const useFetch = (url) => {
         }
     }
 
+    //GET
     useEffect(() => {
         const fetchData = async () => {
 

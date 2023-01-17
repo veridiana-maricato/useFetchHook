@@ -1,14 +1,12 @@
 import './App.css';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import { useFetch } from './hooks/useFetch';
 
 const url = 'http://localhost:3000/products'
 
 function App() {
-
-  const [products, setProducts] = useState([])
 
   // custom hook
   const { data: items, httpConfig, loading, error } = useFetch(url)
@@ -34,7 +32,7 @@ function App() {
       name,
       price
     }
-    console.log('oi')
+
     // const res = await fetch(url, {
     //   method: 'POST',
     //   headers:{
@@ -52,6 +50,8 @@ function App() {
     setName('')
     setPrice('')
   }
+
+  
 
   const handleRemove = (id) => {
     httpConfig(id, 'DELETE')
